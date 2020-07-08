@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	var str = "<table border = 1>";
+	var num = 1;
+	for (var row = 1; row <= 5; row ++) {
+		str += "<tr>";
+		for( col = 1; col <= 5; col ++) {
+			str += "<td>"+num+"</td>"
+			num ++;
+		}
+		str += "</tr>";
+	}
+	 str += "</table>";
+	 console.log(str);
+	 document.write(str);
+</script>
+<script>
+	
+</script>
+</head>
+<body>
+	<!-- <table border =1>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+	</table>  -->
+</body>
+</html>

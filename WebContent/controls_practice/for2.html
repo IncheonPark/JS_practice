@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	for(var i =1; i <= 100; i ++) {
+		if (i % 5 == 0 && i % 7 == 0) { //다른 조건문과 중복 조건을 포함할 시 앞에 놓아야 한다.
+			document.write("i는 5와 7의 배수 <a style= color:aqua;> " +i+ " </a>입니다. <br>");
+		} else if(i % 5 == 0) {
+			document.write("i는 5의 배수 <a style= color:orange;> " +i+ " </a>입니다. <br>");
+		} else if (i % 7 == 0) {
+			document.write("i는 7의 배수 <a style= color:green;> " +i+ " </a>입니다. <br>");
+		}
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	var mon = prompt("현재는 몇 월입니까?", "1");
+	
+	if (mon >= 1 && mon <= 12) {
+		if (mon >= 9 && mon <=11){
+			document.write("독서의 계절 가을이네요!");
+		} else if (mon >= 6 && mon <=8) {
+			document.write("여행가기 좋은 여름이네요!");
+		} else if (mon >= 3 && mon <=5) {
+			document.write("햇살 가득한 봄이네요!");
+		} else {
+			document.write("스키타기 좋은 겨울이네요!");
+		}	
+	} else {
+		alert("1부터 12사이의 값을 입력 해 주세요.") //경고창 메서드
+		location.reload(); //브라우저 새로 고침 메서드
+	}
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

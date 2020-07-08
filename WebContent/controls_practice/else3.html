@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	var id = "park";
+	var pw = "123";
+	
+	var input_id = prompt("아이디는?", "");
+	var input_pw = prompt("비밀번호는?", "");
+	
+	if (input_id == id) {
+		if (input_pw == pw) {
+			document.write(id+" 님 환영합니다!");
+		} else {
+			alert ("비밀번호가 틀렸습니다.");
+			location.reload();
+		}
+	} else {
+		alert ("아이디가 틀렸습니다. ");
+		location.reload();
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>
