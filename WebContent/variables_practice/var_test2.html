@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	var season1 = prompt("1분기 실적 값은?",0);
+	var season2 = prompt("2분기 실적 값은?",0);
+	var season3 = prompt("3분기 실적 값은?",0);
+	var season4 = prompt("4분기 실적 값은?",0);
+	
+	var avg = (Number(season1) + Number(season2) + Number(season3)) / 3;
+	
+	var result;
+	result = Number(season4) >= avg;
+	result = result? "판매량이 평균 이상입니다." : "판매량이 평균 미달입니다.";
+	
+	document.write(result);
+</script>
+</head>
+<body>
+
+</body>
+</html>

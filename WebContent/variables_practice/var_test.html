@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	var price1 = prompt("교통비는?",0);
+	var price2 = prompt("식비는?",0);
+	var price3 = prompt("음료비는?",0);
+	/*var price1 = 3000;
+	var price2 = 4000;
+	var price3 = 3000;*/
+	
+	var sum;
+	sum = Number(price1) + Number(price2) + Number(price3);
+	document.write(sum, "<br>"); //prompt로 받은 값을 바로 넘기고 sum값을 출력해 보면 문자열로 처리되어서 숫자가 합쳐지지 않고 나열 된다. 넘기기 전에 숫자로 바꿔 줘야 함.
+	var result;
+	result = sum <= 10000;
+	document.write(result, "<br>");
+	
+	var sub;
+	if(!result){
+		sub = sum - 10000;
+	}
+	
+	result = result ? "돈 관리 잘 했어요!" : sub +"원 초과" ;
+	document.write(result, "<br>");
+</script>
+</head>
+<body>
+
+</body>
+</html>
