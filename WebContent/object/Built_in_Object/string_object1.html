@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	var t = "Hello Thank you good luck to you"; //0, 6, 12, 16, 21, 26, 29
+	document.write(t.charAt(16), "<br>");
+	document.write(t.indexOf("you"), "<br>");
+	document.write(t.indexOf("you", 16), "<br>");
+	document.write(t.lastIndexOf("you"), "<br>");
+	document.write(t.lastIndexOf("you", 23), "<br>");
+	document.write(t.match("luck"), "<br>");
+	document.write(t.search("you"), "<br>");
+	document.write(t.substr(21,4), "<br>"); //21 인덱스 부터 4개만큼
+	document.write(t.substring(6,12), "<br>"); //6 인덱스 부터 12인덱스 전까지
+	document.write(t.replace("you", "me"), "<br>");
+	document.write(t.toLowerCase(), "<br>");
+	document.write(t.toUpperCase(), "<br>");
+	document.write(t.length, "<br>");
+	
+	var s = t.split(" ");
+	document.write(s[0], "<br>");
+	document.write(s[6], "<br>");
+	
+	var str = "A";
+	
+	var t = str.charCodeAt(0); //위에 var t를 선언했지만 중복 선언이 가능하다.
+	
+	document.write(t, "<br>");
+	document.write(String.fromCharCode(65), "<br>");
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

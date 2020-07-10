@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	var greenArr = ["교대", "방배", "강남"];
+	var yellowArr = ["미금", "정자", "수서"];
+	
+	greenArr.splice(2, 1, "서초", "역삼");
+	console.log(greenArr);
+	
+	var data1 = yellowArr.pop(); //마지막 인덱스의 데이터를 옮겨 담음
+	var data2 = yellowArr.shift(); //첫번째 인덱스의 데이터를 옮겨 담음
+	
+	console.log(yellowArr);
+	
+	yellowArr.push(data2); //대상 데이터를 마지막 인덱스에 밀어 넣음
+	console.log(yellowArr);
+	
+	yellowArr.unshift(data1); //대상 데이터를 첫번째 인덱스에 밀어 넣음
+	console.log(yellowArr);
+</script>
+</head>
+<body>
+test
+</body>
+</html>

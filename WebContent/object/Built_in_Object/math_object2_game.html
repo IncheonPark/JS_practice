@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	document.write("<h1>컴퓨터 가위, 바위, 보 맞추기</h1>");
+	
+	var game = prompt("가위, 바위, 보 중 선택하세요. 기본 값은 가위입니다.", "가위");
+	var userNum;
+	switch(game) {
+	case "가위" : userNum = 1; break;
+	case "바위" : userNum = 2; break;
+	case "보" : userNum = 3; break;
+	default : alert("잘못된 입력 값입니다."); location.reload();
+	
+	}
+	
+	var com = Math.ceil(Math.random() * 3 ); //1에서 3 사이의 난수가 발생
+	if(com == 2) {
+		document.write("<img src=\"../../images/rock.jpg\">");
+		if (userNum == com) {
+			document.write("비겼습니다.");
+		} else if (userNum == 1 ) {
+			document.write("졌습니다.");
+		} else if (userNum == 3) {
+			document.write("이겼습니다!");
+		}
+	} else if (com == 1) {
+		document.write("<img src=\"../../images/scissors.jpg\">");
+		if (userNum == com) {
+			document.write("비겼습니다.");
+		} else if (userNum == 3 ) {
+			document.write("졌습니다.");
+		} else if (userNum == 2) {
+			document.write("이겼습니다!");
+		}
+	} else if (com == 3) {
+		document.write("<img src=\"../../images/paper.jpg\">");
+		if (userNum == com) {
+			document.write("비겼습니다.");
+		} else if (userNum == 2 ) {
+			document.write("졌습니다.");
+		} else if (userNum == 1) {
+			document.write("이겼습니다!");
+		}
+	}
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
