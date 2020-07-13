@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	var addNum = 0;
+	
+	// setTimeout을 재귀호출을 이용해 무한 반복으로 만들었다.
+	! function repeatFunc() {
+		addNum ++;
+		console.log(addNum);
+		setTimeout(function() {
+			repeatFunc()
+		}, 5000);
+	}()
+	
+	
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
